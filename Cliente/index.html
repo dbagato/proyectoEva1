@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bagato Crud Zona Admin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/code.js"></script>
+   
+</head>
+
+<body>
+    <header>
+        <h1>Admin Menu Crud</h1>
+    </header>
+    <nav>
+        <a href="index.html" id="Gestion_Clientes">Gestion Clientes</a>
+        <a href="indexPedido.html" id="Gestion_Pedidos">Gestion Pedidos</a>
+    </nav>
+    <article>
+        <! -- tablas de cliente-->
+        <section id="Clientes">
+            <button id="anyadirCliente">Anyadir Nuevo</button>
+            <table id="tabla_Clientes">
+                <thead>	<tr><th>DNI</th><th>Nombre</th><th>Acciones</th></tr></thead>
+	            <tbody> </tbody> 
+            </table>
+        </section>
+        
+        <! --modal de anyadir cliente-->
+        <div id="modal_anyadir">
+            <h1>Nuevo Usuario</h1>
+            <form action="" method="POST">
+            <label>DNI:</label><input id="dniCliente"> </input></br>    
+            <label>Nombre:</label><input id="nombreCliente"> </input></br> 
+            <label>Direccion:</label><input id="direccion"> </input></br> 
+            <label>Email:</label><input id="email"> </input></br> 
+            
+            </form>
+            <button id="nuevoCliente">Anyadir</button>
+            <button class="ocultar-caja_anyadir">Cerrar</button>
+        </div>
+        <! --modal de editar cliente-->
+        <div id="modal_editar">
+            <h1>Editar datos Usuario</h1>
+            <form action="" method="POST">
+                <label>DNI:</label><input id="dniClienteEdi" disabled> </input></br>    
+                <label>Nombre:</label><input id="nombreClienteEdi"> </input></br> 
+                <label>Direccion:</label><input id="direccionEdi"> </input></br> 
+                <label>Email:</label><input id="emailEdi"> </input></br> 
+                
+                </form>
+            <button id="cliente_editado">Confirmar</button>
+            <button class="ocultar-caja_editar">Cerrar</button>
+        </div>
+    </article>
+
+</body>
+</html>

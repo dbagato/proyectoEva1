@@ -1,0 +1,34 @@
+
+/* Estilos generales*/
+*{  
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .contenedor, td {
+    border: solid 1px black;
+    margin: 2px;
+    padding: 2px;
+  }
+  div#modal_anyadir{
+    display: none; 
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    background-color:salmon;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+ }
+ div#modal_editar{
+  display: none; 
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  background-color:salmon;
+  left: 50px;
+  top: 50px;
+  z-index: 20;
+}
+ label{
+   padding-right: 5%;
+ }
